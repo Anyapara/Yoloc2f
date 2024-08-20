@@ -803,7 +803,7 @@ def parse_model(d, ch):  # model_dict, input_channels(3)
                 c2 = make_divisible(c2 * gw, 8)
             args = [c1, c2]
             if m in [C2f]:
-                args.inser(2, n) #number of repeats
+                args.insert(2, n) #number of repeats
                 n = 1
         else:
             c2 = ch[f]
